@@ -1,0 +1,24 @@
+#user-menu {
+    z-index: 10; /* Asegura que la ventana flotante esté por encima de otros elementos */
+}
+
+  /* Media query personalizada para 855px */
+  @media (max-width: 855px) {
+    /* Estilos móviles que se aplicarán cuando el ancho de la pantalla sea de 855px o menos */
+    .mobile-nav {
+      display: block;  /* Ejemplo: mostrar la navegación móvil */
+    }
+    .desktop-nav {
+      display: none;   /* Ejemplo: ocultar la navegación de escritorio */
+    }
+  }
+
+  @media (min-width: 856px) {
+    /* Estilos para pantallas mayores a 855px */
+    .mobile-nav {
+      display: none;
+    }
+    .desktop-nav {
+      display: block;
+    }
+  }
